@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "EkMukta-Regular";
+  src: url(../assets/fonts/ek-mukta/EkMukta-Regular.ttf);
+}
+@font-face {
+  font-family: "EkMukta-Medium";
+  src: url(../assets/fonts/ek-mukta/EkMukta-Medium.ttf);
+}
+
+@font-face {
+  font-family: "EkMukta-SemiBold";
+  src: url(../assets/fonts/ek-mukta/EkMukta-SemiBold.ttf);
+}
+@font-face {
+  font-family: "EkMukta-Bold";
+  src: url(../assets/fonts/ek-mukta/EkMukta-ExtraBold.ttf);
+}
+
+:root {
+  --darkgrey: #202225;
+  --grey: #36393f;
+  --softgrey: #3c3f45;
+  --primary: #218bd7;
+  --secundary: #b667e3;
+}
+
+body {
+  font-family: "EkMukta-Bold";
+  background-color: var(--softgrey);
+}
