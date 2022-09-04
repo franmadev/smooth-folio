@@ -1,13 +1,14 @@
+import "tailwindcss/tailwind.css";
 import Home from "./views/Home/home";
-import Navbar from "./components/navbar/navbar"
+import Navbar from "./components/navbar/navbar";
 import "./styles/global.css";
 
 function App() {
   return (
-    <>
-    <Navbar/>
+    <div className="max-w-screen-xl md:mx-auto  mx-4">
+      <Navbar />
       <Home />
-    </>
+    </div>
   );
 }
 
