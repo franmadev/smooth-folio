@@ -25,6 +25,11 @@
 }
 
 body {
-  font-family: "EkMukta-Bold";
+  font-family: "EkMukta-Regular";
   background-color: var(--softgrey);
+  color: white;
+}
+
+.bold-font {
+  font-family: "EkMukta-Bold";
 }
