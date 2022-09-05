@@ -1,6 +1,10 @@
 import { SiLinkedin, SiDiscord, SiTwitter, SiGithub } from "react-icons/si";
 import { BiCategory } from "react-icons/bi";
 import { IoIosArrowForward } from "react-icons/io";
+import { FaFolder } from "react-icons/fa";
+import ServicesCard from "../../components/services-card/servicesCard";
+import ProjectsCard from "../../components/projects-card/projectsCard";
+import Contact from "../../components/contact/contact";
 
 function Home() {
   return (
@@ -25,9 +29,9 @@ function Home() {
       <div>
         <section>
           <div className="flex mt-10 items-center place-content-between">
-            <div className="flex   items-center">
+            <div className="flex   items-center gap-1">
               <BiCategory size="1.6rem" color="#B667E3" />
-              <h1 className="text-2xl ml-1">Servicios</h1>
+              <h1 className="text-2xl ml-1 font-extrabold">Servicios</h1>
             </div>
             <div>
               {" "}
@@ -36,6 +40,30 @@ function Home() {
               </button>
             </div>
           </div>
+          <div>
+            <ServicesCard />
+          </div>
+        </section>
+        <section>
+          <div className="flex mt-10 items-center place-content-between">
+            <div className="flex   items-center gap-1">
+              <FaFolder size="1.6rem" color="#218bd7" />
+              <h1 className="text-2xl ml-1 font-extrabold">Proyectos</h1>
+            </div>
+            <div>
+              {" "}
+              <button className="bg-[#218BD7] pl-3 pr-2 py-1 rounded-md flex items-center gap-1">
+                Ver más proyectos <IoIosArrowForward />
+              </button>
+            </div>
+          </div>
+          <div>
+            <ProjectsCard />
+            <ProjectsCard />
+          </div>
+        </section>
+        <section>
+          <Contact />
         </section>
       </div>
     </>
