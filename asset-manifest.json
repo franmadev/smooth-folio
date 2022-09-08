@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/smooth-folio/static/css/main.7bdfcd92.css",
-    "main.js": "/smooth-folio/static/js/main.b78994de.js",
+    "main.js": "/smooth-folio/static/js/main.d6cb8a52.js",
     "static/js/787.f765f3a5.chunk.js": "/smooth-folio/static/js/787.f765f3a5.chunk.js",
     "static/media/EkMukta-ExtraBold.ttf": "/smooth-folio/static/media/EkMukta-ExtraBold.7ac8105b8a4cd7295a6f.ttf",
     "static/media/EkMukta-Regular.ttf": "/smooth-folio/static/media/EkMukta-Regular.7965683ff2a81dbd4dcd.ttf",
     "static/media/EkMukta-Medium.ttf": "/smooth-folio/static/media/EkMukta-Medium.760dcb0fb3b8340bce6c.ttf",
     "static/media/EkMukta-SemiBold.ttf": "/smooth-folio/static/media/EkMukta-SemiBold.aa9b0225810f73e84e50.ttf",
     "static/media/logo_blue.png": "/smooth-folio/static/media/logo_blue.ff0509f15f40a06f5f2d.png",
+    "static/media/Slice1.png": "/smooth-folio/static/media/Slice1.6fbe0a9c7321263e6310.png",
     "index.html": "/smooth-folio/index.html",
     "main.7bdfcd92.css.map": "/smooth-folio/static/css/main.7bdfcd92.css.map",
-    "main.b78994de.js.map": "/smooth-folio/static/js/main.b78994de.js.map",
+    "main.d6cb8a52.js.map": "/smooth-folio/static/js/main.d6cb8a52.js.map",
     "787.f765f3a5.chunk.js.map": "/smooth-folio/static/js/787.f765f3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7bdfcd92.css",
-    "static/js/main.b78994de.js"
+    "static/js/main.d6cb8a52.js"
   ]
 }
