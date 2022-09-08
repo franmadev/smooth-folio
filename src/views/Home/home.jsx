@@ -5,6 +5,7 @@ import { FaFolder } from "react-icons/fa";
 import ServicesCard from "../../components/services-card/servicesCard";
 import ProjectsCard from "../../components/projects-card/projectsCard";
 import Contact from "../../components/contact/contact";
+import ServicesList from "../../db/servicesList";
 
 function Home() {
   return (
@@ -41,7 +42,15 @@ function Home() {
             </div>
           </div>
           <div>
-            <ServicesCard />
+            {ServicesList.map((service, i) => (
+              <div key={i}>
+                <ServicesCard
+                  title={service.title}
+                  description={service.description}
+                  image={service.image}
+                />
+              </div>
+            ))}
           </div>
         </section>
         <section>
