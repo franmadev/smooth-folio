@@ -1,18 +1,21 @@
 import sendu from "./images/Slice1.png";
+import maquetado from "./images/maquetado.jpg";
 
 const ServicesList = [
   {
-    title: "Integración plataforma de envios SENDU",
-    description: "descripción 1",
-    image: sendu,
+    title: "Maquetación web",
+    description: "Servicio de maquetado mequetado (...)",
+    image: maquetado,
   },
   {
     title: "Maquetación web ",
     description: "descripción 2",
+    image: maquetado,
   },
   {
     title: "Prototipado web",
     description: "descripción 2",
+    image: sendu,
   },
 ];
 
