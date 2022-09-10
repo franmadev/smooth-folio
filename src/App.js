@@ -2,6 +2,7 @@ import "tailwindcss/tailwind.css";
 import Home from "./views/Home/home";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
+import GoTop from "./components/gotop/gotop";
 import "./styles/global.css";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Navbar />
         <Home />
       </div>
+      <GoTop />
       <footer>
         <Footer />
       </footer>
