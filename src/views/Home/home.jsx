@@ -11,7 +11,7 @@ function Home() {
   return (
     <>
       <div className="">
-        <h1 className="bold-font text-[55px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#218BD7] to-[#BB65E3] m-0 p-0">
+        <h1 className="bold-font text-[55px] text-center text-transparent bg-clip-text bg-gradient-to-r from-primary to-secundary m-0 p-0">
           franma.dev
         </h1>
         <section className="flex mx-auto justify-center gap-4">
@@ -31,12 +31,12 @@ function Home() {
         <section>
           <div className="flex mt-10 items-center place-content-between">
             <div className="flex   items-center gap-1">
-              <BiCategory size="1.6rem" color="#B667E3" />
-              <h1 className="text-2xl ml-1 font-extrabold">Servicios</h1>
+              <BiCategory size="1.6rem" className="text-primary" />
+              <h1 className="text-2xl ml-1 font-extrabold ">Servicios</h1>
             </div>
             <div>
               {" "}
-              <button className="bg-[#218BD7] pl-3 pr-2 py-1 rounded-md flex items-center gap-1">
+              <button className="bg-primary pl-3 pr-2 py-1 rounded-md flex items-center gap-1 text-white">
                 Ver más servicios <IoIosArrowForward />
               </button>
             </div>
@@ -56,12 +56,12 @@ function Home() {
         <section>
           <div className="flex mt-10 items-center place-content-between">
             <div className="flex   items-center gap-1">
-              <FaFolder size="1.6rem" color="#218bd7" />
+              <FaFolder size="1.6rem" className="text-primary" />
               <h1 className="text-2xl ml-1 font-extrabold">Proyectos</h1>
             </div>
             <div>
               {" "}
-              <button className="bg-[#218BD7] pl-3 pr-2 py-1 rounded-md flex items-center gap-1">
+              <button className="bg-primary pl-3 pr-2 py-1 rounded-md flex items-center gap-1">
                 Ver más proyectos <IoIosArrowForward />
               </button>
             </div>

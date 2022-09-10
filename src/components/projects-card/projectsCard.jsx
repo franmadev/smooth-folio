@@ -8,7 +8,7 @@ import {
 function ProjectsCard() {
   return (
     <>
-      <article className="bg-darkgrey pb-2 my-6 rounded-md">
+      <article className="bg-grey pb-2 my-6 rounded-md shadow-lg">
         <div className="relative">
           <div>
             <img src="" alt="" className="bg-white h-40 rounded-t-md" />
@@ -22,7 +22,9 @@ function ProjectsCard() {
             </button>
           </div>
         </div>
-        <h1 className="px-4 mt-3">Título dle servicio</h1>
+        <h1 className="px-4 mt-3 text-white font-semibold">
+          Título del servicio
+        </h1>
         <p className="px-4 my-3 text-softwhite">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui provident
           recusandae veritatis quod debitis aliquid.

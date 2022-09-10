@@ -18,7 +18,7 @@
 
 :root {
   --darkgrey: #202225;
-  --grey: #36393f;
+  --grey: #2c2f33;
   --softgrey: #3c3f45;
   --primary: #218bd7;
   --secundary: #b667e3;
@@ -26,7 +26,7 @@
 
 body {
   font-family: "EkMukta-Regular";
-  background-color: var(--softgrey);
+  background-color: var(--darkgrey);
   color: white;
 }
 

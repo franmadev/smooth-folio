@@ -2,7 +2,7 @@ import logoFranma from "../../assets/icons/logo/logo_blue.png";
 function Footer() {
   return (
     <>
-      <section className="bg-darkgrey">
+      <section className="bg-grey">
         <div className="mx-4">
           <div></div>
           <div className="place-content-center flex py-6">

@@ -6,7 +6,7 @@ import logoFranma from "./logo_blue.png";
 function Navbar() {
   return (
     <>
-      <div className="place-content-between flex bg-[#202225] px-5 md:px-10 py-3 mt-5 mb-3 rounded-md items-center ">
+      <div className="place-content-between flex px-5 md:px-10 py-3 mt-5 mb-3 rounded-md items-center shadow-xl">
         <div>
           <img src={logoFranma} alt="" className="h-[1.6rem]" />
         </div>
