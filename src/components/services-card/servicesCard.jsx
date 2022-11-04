@@ -1,25 +1,28 @@
-import { BiMailSend } from "react-icons/bi";
-import { IoIosArrowForward } from "react-icons/io";
+// import { BiMailSend } from "react-icons/bi";
+// import { IoIosArrowForward } from "react-icons/io";
+import { BsArrowRight } from "react-icons/bs";
 import PropTypes from "prop-types";
-function ServicesCard({ title, description, image }) {
+import { useNavigate } from "react-router-dom";
+function ServicesCard({ title, description, image, titleId }) {
+  const navigate = useNavigate();
   return (
     <>
-      <article className="bg-grey py-2 my-6 rounded-md shadow-lg">
-        <h1 className="px-4 mb-3 font-semibold">{title}</h1>
-        <div className="bg-white h-40 overflow-hidden">
-          <img src={image} alt="" className="w-[100%]" />
-        </div>
-
-        <p className="px-4 my-4 text-softwhite">{description}</p>
-        <div className="place-content-between flex px-4">
-          <div>
-            <BiMailSend size="1.7rem" className="text-softwhite" />
+      <article className="bg-grey py-3 my-6 rounded-md shadow-lg flex ">
+        <div className="w-[100%] relative">
+          <h1 className="px-4 font-semibold">{title}</h1>
+          <p className="px-4 text-softwhite w-[100%] ">{description}</p>
+          <div className="place-content-between flex px-4">
+            <div></div>
+            <div>
+              <button
+                onClick={() => navigate(`/servicios/${titleId}`)}
+                className="flex items-center gap-2 rounded-md text-primary"
+              >
+                Ver más <BsArrowRight />
+              </button>
+            </div>
           </div>
-          <div>
-            <button className="flex items-center gap-2 rounded-md text-primary">
-              Ver más <IoIosArrowForward />
-            </button>
-          </div>
+          <div className="place-content-between flex px-4 absolute bottom-0 right-0"></div>
         </div>
       </article>
     </>
@@ -30,6 +33,7 @@ ServicesCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
+  titleId: PropTypes.string,
 };
 
 export default ServicesCard;
