@@ -3,7 +3,7 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 function Contact() {
   return (
     <>
-      <section className="mb-6">
+      <section className="my-10">
         <div className="flex font-extrabold">
           <BiMessageSquareDots size="2rem" className="text-primary" />
 
