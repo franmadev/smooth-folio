@@ -1,11 +1,13 @@
 import { BiCode, BiShare } from "react-icons/bi";
+
+import PropTypes from "prop-types";
 import {
   IoLogoJavascript,
   IoLogoCss3,
   IoLogoReact,
   IoLogoGithub,
 } from "react-icons/io5";
-function ProjectsCard() {
+function ProjectsCard({ project }) {
   return (
     <>
       <article className="bg-grey pb-2 my-6 rounded-md shadow-lg">
@@ -22,13 +24,8 @@ function ProjectsCard() {
             </button>
           </div>
         </div>
-        <h1 className="px-4 mt-3 text-white font-semibold">
-          Título del servicio
-        </h1>
-        <p className="px-4 my-3 text-softwhite">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui provident
-          recusandae veritatis quod debitis aliquid.
-        </p>
+        <h1 className="px-4 mt-3 text-white font-semibold">{project?.title}</h1>
+        <p className="px-4 my-3 text-softwhite">{project?.shortDescription}</p>
         <div className=" flex px-4 gap-2 mb-2">
           {/* Remplace whit statics assets */}
           <IoLogoCss3 size="2rem" />
@@ -40,5 +37,8 @@ function ProjectsCard() {
     </>
   );
 }
-
+ProjectsCard.propTypes = {
+  project: PropTypes.object,
+  tit: PropTypes.string,
+};
 export default ProjectsCard;
