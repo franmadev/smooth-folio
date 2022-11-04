@@ -1,21 +1,27 @@
-import sendu from "./images/Slice1.png";
-import maquetado from "./images/maquetado.jpg";
+// import sendu from "./images/Slice1.png";
+// import maquetado from "./images/maquetado.jpg";
+import maquetadoIcon from "../assets/icons/maqueta.png";
+import frontendIcon from "../assets/icons/frontend.png";
+import emailTemplateIcon from "../assets/icons/email-template.png";
 
 const ServicesList = [
   {
+    titleId: "maquetacion",
     title: "Maquetación web",
-    description: "Servicio de maquetado mequetado (...)",
-    image: maquetado,
+    description: "Marquetación y/o protipado web",
+    image: maquetadoIcon,
   },
   {
-    title: "Maquetación web ",
-    description: "descripción 2",
-    image: maquetado,
+    titleId: "desarrollo",
+    title: "Desarrollo Front-end",
+    description: "Desarrollo front-end para sitios y aplicaciones web.",
+    image: frontendIcon,
   },
   {
-    title: "Prototipado web",
-    description: "descripción 2",
-    image: sendu,
+    titleId: "templates",
+    title: "E-mail templates",
+    description: "Plantillas para correos personalizados",
+    image: emailTemplateIcon,
   },
 ];
 
