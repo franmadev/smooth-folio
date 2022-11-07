@@ -25,7 +25,8 @@ function Layout() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="max-w-screen-xl md:mx-auto mx-4 min-h-screen">
+        <div className="max-w-screen-xl min-h-screen">
+          
           <p className="text-white"></p>
           <Navbar />
           <div className="">
