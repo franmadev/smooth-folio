@@ -13,8 +13,11 @@ import ProyectsList from "../../db/projectsList.js";
 function Home() {
   const navigate = useNavigate();
   const url = "servicios";
+  const services = ServicesList.slice(0, 3);
+  const projects = ProyectsList.slice(0, 3)
   return (
     <>
+    <div className="md:mx-auto mx-4">
       <div>
         <h1 className="bold-font text-[55px] text-center text-transparent bg-clip-text bg-gradient-to-r from-primary to-secundary m-0 p-0">
           franma.dev
@@ -47,13 +50,10 @@ function Home() {
             </div>
           </div>
           <div>
-            {ServicesList.map((service, i) => (
+            {services.map((service, i) => (
               <div key={i}>
                 <ServicesCard
-                  title={service.title}
-                  description={service.description}
-                  image={service.image}
-                  titleId={service.titleId}
+                  serviceData={service}
                 />
               </div>
             ))}
@@ -73,7 +73,7 @@ function Home() {
             </div>
           </div>
           <div>
-            {ProyectsList.map((pro, index) => (
+            {projects.map((pro, index) => (
               <div key={index}>
                 <ProjectsCard project={pro} />
               </div>
@@ -83,6 +83,7 @@ function Home() {
         <section>
           <Contact />
         </section>
+      </div>
       </div>
     </>
   );
