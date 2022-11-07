@@ -5,6 +5,7 @@ import "./styles/global.css";
 import Error from "./views/No-found/noFound";
 import Services from "./views/ServicesPage/servicesPage.jsx";
 import ServiceInfo from "./views/ServiceInfo/ServiceInfo.jsx";
+import Maquetacion from "./views/ServicesPages/Maquetacion.jsx";
 
 import Home from "./views/Home/home";
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="*" element={<Navigate to="error" />} />
           <Route path="servicios">
             <Route index element={<Services />} />
+            <Route path="maquetacion" element={<Maquetacion />} />
             <Route path=":titleId" element={<ServiceInfo />} />
           </Route>
         </Route>
