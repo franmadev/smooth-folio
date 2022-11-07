@@ -1,9 +1,12 @@
 import logo from "../../assets/icons/logo/logo_blue.png";
 import Social from "../../components/social/social";
 import Contact from "../../components/contact/contact";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
+
 function ServiceInfo() {
   const { titleId } = useParams();
+  const {state} = useLocation();
+
   return (
     <>
       <section className="mt-14 mb-14">
@@ -15,7 +18,9 @@ function ServiceInfo() {
         </div>
         <Social />
       </section>
-      <div></div>
+      <div>
+        <p>{state.description}</p>
+      </div>
       <section className="mb-16">
         <Contact />
       </section>
