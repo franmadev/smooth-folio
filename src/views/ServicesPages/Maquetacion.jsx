@@ -1,10 +1,11 @@
 import logo from "../../assets/icons/logo/logo_blue.png"
 import Social from "../../components/social/social"
 import Contact from "../../components/contact/contact"
-import { HiOutlineDocumentSearch, HiOutlineDocumentText, HiOutlineFire, HiOutlineChevronDown, HiOutlineLightBulb } from "react-icons/hi";
+import { HiOutlineDocumentSearch, HiOutlineDocumentText, HiOutlineFire, HiOutlineChevronDown } from "react-icons/hi";
 import { TbStepInto } from "react-icons/tb";
-import bg from "../../assets/backgrounds/macos.jpg"
-
+import { SiGmail } from "react-icons/si";
+import { IoLogoWhatsapp } from "react-icons/io";
+import smallBg from "../../assets/backgrounds/macos.png"
 function Maquetacion() {
   return (
     <>
@@ -30,7 +31,7 @@ function Maquetacion() {
           <h1 className="text-2xl ml-1">Pasos</h1>
         </div>
 
-        <div className="flex bg-grey rounded-md px-3 py-[9px] my-3 items-center place-content-between">
+        <div className="flex bg-grey rounded-md px-2 py-[9px] my-3 items-center place-content-between">
           <div className="flex items-center">
             <div className="bg-grey mr-3">
               <HiOutlineDocumentSearch size="2.3rem" className="text-primary" />
@@ -40,7 +41,7 @@ function Maquetacion() {
           <div className="items-center"><HiOutlineChevronDown className="text-primary font-bold" size="1.2rem" /></div>
         </div>
 
-        <div className="flex bg-grey rounded-md px-3 py-[9px] my-3 items-center place-content-between">
+        <div className="flex bg-grey rounded-md px-2 py-[9px] my-3 items-center place-content-between">
           <div className="flex items-center">
             <div className="bg-grey mr-3">
               <HiOutlineDocumentText size="2.3rem" className="text-softgrey" />
@@ -50,7 +51,7 @@ function Maquetacion() {
           <div className="items-center"><HiOutlineChevronDown className="text-primary font-bold" size="1.2rem" /></div>
         </div>
 
-        <div className="flex bg-grey rounded-md px-3 py-[9px] my-3 items-center place-content-between">
+        <div className="flex bg-grey rounded-md px-2 py-[9px] my-3 items-center place-content-between">
           <div className="flex items-center">
             <div className="bg-grey mr-3">
               <HiOutlineDocumentSearch size="2.3rem" className="text-primary" />
@@ -60,7 +61,7 @@ function Maquetacion() {
           <div className="items-center"><HiOutlineChevronDown className="text-primary font-bold" size="1.2rem" /></div>
         </div>
 
-        <div className="flex bg-grey rounded-md px-3 py-[9px] my-3 items-center place-content-between">
+        <div className="flex bg-grey rounded-md px-2 py-[9px] my-3 items-center place-content-between">
           <div className="flex items-center">
             <div className="bg-grey mr-3">
               <HiOutlineDocumentText size="2.3rem" className="text-softgrey" />
@@ -70,7 +71,7 @@ function Maquetacion() {
           <div className="items-center"><HiOutlineChevronDown className="text-primary font-bold" size="1.2rem" /></div>
         </div>
 
-        <div className="flex bg-grey rounded-md px-3 py-[9px] my-3 items-center place-content-between">
+        <div className="flex bg-grey rounded-md px-2 py-[9px] my-3 items-center place-content-between">
           <div className="flex items-center">
             <div className="bg-grey mr-3">
               <HiOutlineFire size="2.3rem" className="text-secundary" />
@@ -81,15 +82,25 @@ function Maquetacion() {
         </div>
 
       </section>
-      <section className="flex rounded-md   my-3 items-center mt-5 mx-3  place-content-center pr-2 py-4" style={{
-          backgroundImage: `url(${bg})`,
+
+      <section className="flex items-center pt-4 pb-5 mt-6 place-content-center justify-between mx-3 px-2"  style={{
+          backgroundImage: `url(${smallBg})`,
           backgroundSize: "100%",
           backgroundRepeat: "no-repeat",
         }}>
-          <HiOutlineLightBulb size="2rem" className="text-softwhite" />
-          <h1 className="text-2xl ml-1 text-softwhite">Quiero este servicio</h1>
+
+        <div className="flex items-center place-content-center text-white">
+          <h1 className="text-2xl ml-1 ">Quiero este servicio</h1>
+        </div>
+
+        <div>
+          <div className="bg-primary py-[6px] mb-2 px-3 rounded-md flex items-center"><SiGmail className="mr-2"/> Correo</div>
+          <div className="bg-softgrey py-[6px]  px-3 rounded-md flex items-center"><IoLogoWhatsapp className="mr-2" size="1.2rem"/>Whatsapp</div>
+        </div>
 
       </section>
+
+
       <section className="mb-16 md:mx-auto mx-4">
         <Contact />
       </section>
